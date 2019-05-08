@@ -1,0 +1,27 @@
+{
+  "name": "yoloyi/travis-test",
+  "description": "test",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Yoloyi",
+      "email": "uyy2244@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Travis\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Travis\\Test\\": "tests/"
+    }
+  },
+  "minimum-stability": "dev",
+  "require": {},
+  "require-dev": {
+    "phpunit/phpunit": "^8"
+  }
+}
