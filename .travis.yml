@@ -2,15 +2,22 @@ language: php
 php:
   - '7.2'
 
+before_install:
+  - echo before-install
+
+
 install:
+  - echo install
   - composer self-update
   - composer install --no-interaction --prefer-dist
 
 script:
+  - echo script
   - php vendor/bin/phpunit
 
 after_script:
-  - echo success
+  - echo after-script
 
-deploy:
+after_success:
+  - echo success
 
